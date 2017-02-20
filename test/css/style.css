@@ -1,0 +1,128 @@
+/* Inclure une police personnalisée */
+@font-face
+{
+    font-family: 'KaushanScript';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/KaushanScript-Regular.otf');
+}
+@font-face
+{
+    font-family: 'LearningCurve';
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: normal;
+
+    src: url('../fonts/learning_curve_regular_ot_ps.otf'),
+    url('../fonts/learning_curve_bold_ot_ps.otf'),
+    url('../fonts/learning_curve_dashed_ot_ps.otf'),
+    url('../fonts/learning_curve_dings_ot_ps.otf');
+}
+/* Pour toutes les balises de notre page */
+*
+{
+    font-family: 'LearningCurve', Impact, 'Arial Black', Arial, Verdana, sans-serif, serif;
+}
+/* Pour touts les a de notre page */
+a
+{
+    text-decoration: blink;
+}
+a:hover
+{
+    text-decoration: underline;
+
+    color: teal;
+}
+a:visited
+{
+    color: red;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    opacity: .5;
+    color: inherit;
+    background-color: white;
+}
+/* Pour touts les h1 de notre page */
+h1
+{
+    text-decoration: underline;
+
+    border-top: 3px solid red;
+}
+/* Pour le corps de notre page */
+body
+{
+    background-color: #f4ebe7;
+}
+/* Tous les em contenus dans les h1 */
+h1 em
+{
+    text-decoration: line-through;
+
+    color: red;
+}
+h4
+{
+    font-size: 1em;
+
+    color: rgb(8, 14, 41);
+    border: 1px dashed black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px teal;
+    text-shadow: 1px 1px 3px teal;
+}
+/* Le premier p qui suit un h1 */
+h2 + p
+{
+    color: green;
+}
+/* Tous les inputs */
+input:focus
+{
+    border-style: dashed;
+    border-color: blue;
+}
+/* Pour tous les paragraphes */
+p
+{
+    overflow: auto;
+
+    margin-left: 10px;
+
+    text-align: justify;
+    text-emphasis: 10px;
+}
+p:hover
+{
+    margin-left: 10px;
+
+    transition: 1s;
+    transition-delay: 1s;
+    word-wrap: break-word;
+
+    border-left: 2px solid rgba(103, 120, 152, .5);
+    border-left-width: thin;
+    border-left-style: double;
+    background-color: rgba(103, 120, 152, .5);
+}
+/* Tous les élémentzs ayant la classe rouge */
+.rouge
+{
+    color: red;
+}
+/* Tous les éléments ayant l'id html, ou css */
+#html,
+#css
+{
+    text-decoration: line-through;
+
+    color: blue;
+}
