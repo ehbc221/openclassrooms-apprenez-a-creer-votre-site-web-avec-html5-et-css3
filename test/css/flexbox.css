@@ -1,0 +1,270 @@
+#conteneur1
+{
+    display: flex;
+    flex-direction: row;
+
+    border: 2px solid black;
+}
+.element1
+{
+    width: 150px;
+    height: 100px;
+}
+.element1:nth-child(1)
+{
+    background-color: orange;
+}
+
+.element1:nth-child(2)
+{
+    background-color: blue;
+}
+
+.element1:nth-child(3)
+{
+    background-color: green;
+}
+
+.element1:nth-child(4)
+{
+    background-color: red;
+}
+#conteneur2
+{
+    display: flex;
+    flex-direction: row;
+
+    border: 2px solid black;
+
+    flex-wrap: wrap;
+}
+.element2
+{
+    width: 200px;
+    height: 100px;
+}
+.element2:nth-child(1)
+{
+    background-color: orange;
+}
+
+.element2:nth-child(2)
+{
+    background-color: blue;
+}
+
+.element2:nth-child(3)
+{
+    background-color: green;
+}
+
+.element2:nth-child(4)
+{
+    background-color: red;
+}
+#conteneur3
+{
+    display: flex;
+    flex-direction: row-reverse;
+
+    border: 2px solid black;
+
+    align-content: center;
+    justify-content: center;
+}
+.element3
+{
+    width: 150px;
+    height: 100px;
+}
+.element3:nth-child(1)
+{
+    background-color: orange;
+}
+
+.element3:nth-child(2)
+{
+    background-color: blue;
+}
+
+.element3:nth-child(3)
+{
+    background-color: green;
+}
+
+.element3:nth-child(4)
+{
+    background-color: red;
+}
+#conteneur4
+{
+    display: flex;
+    flex-direction: row-reverse;
+
+    border: 2px solid black;
+}
+.element4
+{
+    width: 150px;
+    height: 100px;
+}
+.element4:nth-child(1)
+{
+    background-color: orange;
+}
+
+.element4:nth-child(2)
+{
+    background-color: blue;
+}
+
+.element4:nth-child(3)
+{
+    background-color: green;
+}
+
+.element4:nth-child(4)
+{
+    background-color: red;
+}
+#conteneur5
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 600px;
+
+    border: 2px solid black;
+
+    justify-content: space-around;
+}
+.element5
+{
+    width: 150px;
+    height: 100px;
+}
+.element5:nth-child(1)
+{
+    background-color: orange;
+}
+
+.element5:nth-child(2)
+{
+    background-color: blue;
+}
+
+.element5:nth-child(3)
+{
+    background-color: green;
+}
+
+.element5:nth-child(4)
+{
+    background-color: red;
+}
+#conteneur6
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 600px;
+
+    border: 2px solid black;
+
+    justify-content: space-between;
+}
+.element6
+{
+    width: 150px;
+    height: 100px;
+}
+.element6:nth-child(1)
+{
+    background-color: orange;
+}
+
+.element6:nth-child(2)
+{
+    background-color: blue;
+}
+
+.element6:nth-child(3)
+{
+    background-color: green;
+}
+
+.element6:nth-child(4)
+{
+    background-color: red;
+}
+#conteneur7
+{
+    display: flex;
+    flex-direction: column-reverse;
+
+    height: 600px;
+
+    border: 2px solid black;
+}
+.element7
+{
+    width: 150px;
+    height: 100px;
+    margin: auto;
+}
+.element7:nth-child(1)
+{
+    background-color: orange;
+}
+
+.element7:nth-child(2)
+{
+    background-color: blue;
+}
+
+.element7:nth-child(3)
+{
+    background-color: green;
+}
+
+.element7:nth-child(4)
+{
+    background-color: red;
+}
+#conteneur8
+{
+    display: flex;
+    flex-direction: column-reverse;
+
+    height: 600px;
+
+    border: 2px solid black;
+}
+.element8
+{
+    width: 150px;
+    height: 100px;
+}
+.element8:nth-child(1)
+{
+    background-color: orange;
+
+    flex: 2;
+}
+
+.element8:nth-child(2)
+{
+    background-color: blue;
+
+    flex: 1;
+}
+
+.element8:nth-child(3)
+{
+    background-color: green;
+}
+
+.element8:nth-child(4)
+{
+    background-color: red;
+}

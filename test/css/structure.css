@@ -1,20 +1,19 @@
-aside
-{
-	font-style: oblique;
-}
-footer
-{
-	font-style: oblique;
-}
-header
-{
-	font-style: oblique;
-}
+
 nav
 {
-	font-style: oblique;
+    display: inline-block;
+
+    width: 150px;
+
+    vertical-align: top;
+
+    border: 1px solid black;
 }
 section
 {
-	font-style: oblique;
+    display: inline-block;
+
+    vertical-align: top;
+
+    border: 1px solid blue;
 }
