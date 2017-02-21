@@ -1,0 +1,160 @@
+/* Ajout des polices personnalisées */
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/ballpark.eot');
+    src: url('../fonts/ballpark.eot?#iefix') format('embeddedopentype'),
+    url('../fonts/ballpark.woff') format('woff'),
+    url('../fonts/ballpark.ttf') format('truetype'),
+    url('../fonts/ballpark.svg#BallparkWeiner') format('svg');
+}
+@font-face
+{
+    font-family: 'Dayrom';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/dayrom.eot');
+    src: url('../fonts/dayrom.eot?#iefix') format('embeddedopentype'),
+    url('../fonts/dayrom.woff') format('woff'),
+    url('../fonts/dayrom.ttf') format('truetype'),
+    url('../fonts/dayrom.svg#Dayrom') format('svg');
+}
+/* FIN Ajout des polices personnalisées */
+
+/* Différentes parties de la page*/
+body
+{
+    font-family: Dayrom;
+
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    background-image: url('../images/fond_jaune.png');
+}
+.contenu-page
+{
+    width: 900px;
+    margin: auto;
+    padding: 2px;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+
+    margin-right: 2px;
+    margin-left: 2px;
+
+    align-content: space-between;
+    flex-wrap: nowrap;
+}
+section
+{
+    margin-right: 2px;
+    margin-left: 2px;
+}
+footer
+{
+    margin-right: 2px;
+    margin-left: 2px;
+}
+/* FIN Différentes parties de la page*/
+
+/* Header */
+.entete
+{
+    border: 1px solid #000;
+
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    flex-grow: 2;
+    align-self: baseline;
+}
+header img
+{
+    display: inline-block;
+
+    margin-bottom: inherit;
+}
+header h1
+{
+    font-family: BallparkWeiner;
+    font-size: 2.5em;
+
+    display: inline-block;
+
+    margin-bottom: inherit;
+
+    text-transform: none;
+}
+header p
+{
+    font-size: 1.1em;
+
+    margin-top: inherit;
+}
+nav
+{
+    text-align: right;
+
+    border: 1px solid #000;
+
+    align-self: baseline;
+    flex-grow: 2;
+    flex-wrap: nowrap;
+}
+nav li
+{
+    font-size: 1.2em;
+
+    display: inline-block;
+
+    margin-right: 2%;
+    margin-left: 2%;
+
+    list-style-type: none;
+}
+nav a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #000;
+}
+nav a:hover
+{
+    text-decoration: underline;
+
+    color: #760001;
+}
+/* FINHeader */
+
+/* Section */
+article p
+{
+    text-align: justify;
+}
+/* FIN Section */
+
+/* Séparateurs */
+.separateur-header
+{
+    background-repeat: repeat-x;
+}
+/* FIN Séparateurs */
+
+/* Autres Balises */
+h1
+{
+    font-size: 1.2em;
+    font-weight: inherit;
+
+    text-transform: uppercase;
+}
+/* FIN Autres Balises */
