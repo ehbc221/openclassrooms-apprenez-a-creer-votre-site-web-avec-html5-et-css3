@@ -25,17 +25,21 @@
 }
 /* FIN Ajout des polices personnalisées */
 
+
 /* Différentes parties de la page*/
 body
 {
-    font-family: Dayrom;
+    font-family: Dayrom, Impact, 'Arial Black', Arial, Verdana, sans-serif, serif;
 
     margin-top: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
 
+    cursor: auto;
+
     background-image: url('../images/fond_jaune.png');
+    background-attachment: fixed;
 }
 .contenu-page
 {
@@ -48,43 +52,30 @@ header
     display: flex;
     flex-direction: row;
 
-    margin-right: 2px;
-    margin-left: 2px;
-
-    align-content: space-between;
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 section
 {
-    margin-right: 2px;
-    margin-left: 2px;
-}
-footer
-{
-    margin-right: 2px;
-    margin-left: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /* FIN Différentes parties de la page*/
+
 
 /* Header */
 .entete
 {
-    border: 1px solid #000;
-
-    flex: 1 1 auto;
-    flex-wrap: nowrap;
-    flex-grow: 2;
-    align-self: baseline;
+    flex-grow: 5;
+    align-self: flex-end;
 }
 header img
 {
     display: inline-block;
-
-    margin-bottom: inherit;
 }
 header h1
 {
-    font-family: BallparkWeiner;
+    font-family: BallparkWeiner, Impact, 'Arial Black', Arial, Verdana, sans-serif, serif;
     font-size: 2.5em;
 
     display: inline-block;
@@ -101,53 +92,168 @@ header p
 }
 nav
 {
-    text-align: right;
+    flex-grow: 1;
+    align-self: flex-end;
+}
+nav ul
+{
+    display: flex;
+    flex-direction: row;
 
-    border: 1px solid #000;
-
-    align-self: baseline;
-    flex-grow: 2;
-    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 }
 nav li
 {
-    font-size: 1.2em;
+    font-size: 1.3em;
 
-    display: inline-block;
-
-    margin-right: 2%;
-    margin-left: 2%;
-
-    list-style-type: none;
+    list-style-type: none;    ;
 }
 nav a
 {
     text-decoration: none;
     text-transform: uppercase;
 
-    color: #000;
+    color: #000;    ;
 }
 nav a:hover
 {
-    text-decoration: underline;
-
     color: #760001;
+    border-bottom: 3px solid #000;
+    border-bottom-color: #760001;
+    border-radius: 2px;
 }
 /* FINHeader */
 
+
+/* Diaporama */
+.diaporama
+{
+    position: relative;
+
+    height: 200px;
+
+    border-radius: 5px;
+    background-image: url('../images/sanfrancisco.jpg');
+    box-shadow: 0 3px 5px #706b64;
+}
+.legende-diapo
+{
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    height: 25%;
+
+    opacity: .8;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    background-color: #000;
+
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.bouton-diapo
+{
+    height: 60%;
+
+    border-radius: 5px;
+    background-image: url('../images/fond_degraderouge.png');
+    background-repeat: repeat-x;
+}
+.bouton-diapo a
+{
+    text-decoration: none;
+
+    color: #fff;
+}
+/* FIN Diaporama */
+
+
 /* Section */
+.section
+{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.section article
+{
+    width: 70%;
+}
+.section-header
+{
+    display: flex;
+
+    align-items: center;
+}
+article img
+{
+    display: inline-block;
+}
+article h1
+{
+    position: relative;
+    left: 10px;
+}
 article p
 {
+    font-size: .8em;
+
     text-align: justify;
 }
+aside
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 25%;
+    padding: 15px;
+
+    color: #fff;
+    border-radius: 5px;
+    background-color: #706b64;
+    box-shadow: -2px 2px 3px #706b64;
+
+    align-items: center;
+    flex-wrap: nowrap;
+}
+aside h1
+{
+    font-size: 1em;
+}
+aside img
+{
+    align-self: center;
+}
+aside p
+{
+    font-size: .9em;
+
+    text-align: justify;
+}
+.reseaux-sociaux
+{
+    flex-wrap: nowrap;
+}
 /* FIN Section */
+
 
 /* Séparateurs */
 .separateur-header
 {
+    min-height: 5px;
+    margin-bottom: 15px;
+
+    background-image: url('../images/separateur.png');
     background-repeat: repeat-x;
 }
 /* FIN Séparateurs */
+
 
 /* Autres Balises */
 h1
