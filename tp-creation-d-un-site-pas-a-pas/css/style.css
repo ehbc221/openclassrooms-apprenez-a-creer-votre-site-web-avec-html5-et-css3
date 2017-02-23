@@ -1,4 +1,5 @@
-/* Ajout des polices personnalisées */
+/* Définition des ../fonts personnalisées */
+
 @font-face
 {
     font-family: 'BallparkWeiner';
@@ -6,11 +7,12 @@
     font-style: normal;
 
     src: url('../fonts/ballpark.eot');
-    src: url('../fonts/ballpark.eot?#iefix') format('embeddedopentype'),
+    src: url('../fonts/ballpark.eot?#iefix') format('embedded-opentype'),
     url('../fonts/ballpark.woff') format('woff'),
     url('../fonts/ballpark.ttf') format('truetype'),
     url('../fonts/ballpark.svg#BallparkWeiner') format('svg');
 }
+
 @font-face
 {
     font-family: 'Dayrom';
@@ -18,249 +20,336 @@
     font-style: normal;
 
     src: url('../fonts/dayrom.eot');
-    src: url('../fonts/dayrom.eot?#iefix') format('embeddedopentype'),
+    src: url('../fonts/dayrom.eot?#iefix') format('embedded-opentype'),
     url('../fonts/dayrom.woff') format('woff'),
     url('../fonts/dayrom.ttf') format('truetype'),
     url('../fonts/dayrom.svg#Dayrom') format('svg');
 }
-/* FIN Ajout des polices personnalisées */
 
+/* Eléments principaux de la page */
 
-/* Différentes parties de la page*/
 body
 {
-    font-family: Dayrom, Impact, 'Arial Black', Arial, Verdana, sans-serif, serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-
-    cursor: auto;
-
-    background-image: url('../images/fond_jaune.png');
-    background-attachment: fixed;
+    color: #181818;
+    background: url('../images/fond_jaune.png');
 }
-.contenu-page
+
+#bloc_page
 {
-    width: 900px;
+    width: 80%;
+    min-width: 550px;
     margin: auto;
-    padding: 2px;
 }
+
+section h1,
+footer h1,
+nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+
+    text-transform: uppercase;
+}
+
+/* Header */
+
 header
 {
     display: flex;
-    flex-direction: row;
 
-    flex-wrap: nowrap;
+    background: url('../images/separateur.png') repeat-x bottom;
+
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
 }
-section
-{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-/* FIN Différentes parties de la page*/
 
-
-/* Header */
-.entete
-{
-    flex-grow: 5;
-    align-self: flex-end;
-}
-header img
-{
-    display: inline-block;
-}
-header h1
-{
-    font-family: BallparkWeiner, Impact, 'Arial Black', Arial, Verdana, sans-serif, serif;
-    font-size: 2.5em;
-
-    display: inline-block;
-
-    margin-bottom: inherit;
-
-    text-transform: none;
-}
-header p
-{
-    font-size: 1.1em;
-
-    margin-top: inherit;
-}
-nav
-{
-    flex-grow: 1;
-    align-self: flex-end;
-}
-nav ul
-{
-    display: flex;
-    flex-direction: row;
-
-    justify-content: space-around;
-    flex-wrap: nowrap;
-}
-nav li
-{
-    font-size: 1.3em;
-
-    list-style-type: none;    ;
-}
-nav a
-{
-    text-decoration: none;
-    text-transform: uppercase;
-
-    color: #000;    ;
-}
-nav a:hover
-{
-    color: #760001;
-    border-bottom: 3px solid #000;
-    border-bottom-color: #760001;
-    border-radius: 2px;
-}
-/* FINHeader */
-
-
-/* Diaporama */
-.diaporama
-{
-    position: relative;
-
-    height: 200px;
-
-    border-radius: 5px;
-    background-image: url('../images/sanfrancisco.jpg');
-    box-shadow: 0 3px 5px #706b64;
-}
-.legende-diapo
-{
-    bottom: 0;
-
-    display: flex;
-    flex-direction: row;
-
-    height: 25%;
-
-    opacity: .8;
-    color: #fff;
-    border-radius: 0 0 5px 5px;
-    background-color: #000;
-
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-.bouton-diapo
-{
-    height: 60%;
-
-    border-radius: 5px;
-    background-image: url('../images/fond_degraderouge.png');
-    background-repeat: repeat-x;
-}
-.bouton-diapo a
-{
-    text-decoration: none;
-
-    color: #fff;
-}
-/* FIN Diaporama */
-
-
-/* Section */
-.section
-{
-    display: flex;
-    flex-direction: row;
-
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-.section article
-{
-    width: 70%;
-}
-.section-header
-{
-    display: flex;
-
-    align-items: center;
-}
-article img
-{
-    display: inline-block;
-}
-article h1
-{
-    position: relative;
-    left: 10px;
-}
-article p
-{
-    font-size: .8em;
-
-    text-align: justify;
-}
-aside
+#titre_principal
 {
     display: flex;
     flex-direction: column;
+}
 
-    width: 25%;
-    padding: 15px;
+#logo
+{
+    display: flex;
+    flex-direction: row;
 
-    color: #fff;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 60px;
+    height: 60px;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    font-weight: normal;
+
+    margin-top: 0;
+}
+
+/* Navigation */
+
+nav ul
+{
+    display: flex;
+
+    margin-left: 0;
+
+    list-style-type: none;
+}
+
+nav li
+{
+    margin-right: 10px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+
+    padding-bottom: 3px;
+
+    text-decoration: none;
+
+    color: #181818;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/* Bannière */
+
+#banniere_image
+{
+    position: relative;
+
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+
     border-radius: 5px;
-    background-color: #706b64;
-    box-shadow: -2px 2px 3px #706b64;
+    background: url('../images/sanfrancisco.jpg') no-repeat;
+    box-shadow: 0 4px 4px #1c1a19;
+}
 
-    align-items: center;
-    flex-wrap: nowrap;
-}
-aside h1
+#banniere_description
 {
-    font-size: 1em;
+    font-size: .8em;
+
+    position: absolute;
+    bottom: 0;
+
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+
+    color: white;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(24,24,24,.8);
 }
-aside img
+
+.bouton_rouge
 {
-    align-self: center;
+    font-size: 1.2em;
+
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+
+    height: 25px;
+    padding: 3px 8px 0 8px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    background: url('../images/fond_degraderouge.png') repeat-x;
 }
-aside p
+
+.bouton_rouge img
+{
+    border: 0;
+}
+
+/* Corps */
+
+section
+{
+    display: flex;
+
+    margin-bottom: 20px;
+}
+
+article,
+aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+
+    flex: 3;
+}
+
+.ico_categorie
+{
+    margin-right: 8px;
+
+    vertical-align: middle;
+}
+
+article p
+{
+    font-size: .8em;
+}
+
+aside
 {
     font-size: .9em;
 
-    text-align: justify;
+    position: relative;
+
+    padding: 10px;
+
+    color: white;
+    border-radius: 5px;
+    background-color: #706b64;
+    box-shadow: 0 2px 5px #1c1a19;
+
+    flex: 1.2;
 }
-.reseaux-sociaux
+
+#fleche_bulle
 {
-    flex-wrap: nowrap;
+    position: absolute;
+    top: 100px;
+    left: -12px;
 }
-/* FIN Section */
 
-
-/* Séparateurs */
-.separateur-header
+#photo_zozor
 {
-    min-height: 5px;
-    margin-bottom: 15px;
-
-    background-image: url('../images/separateur.png');
-    background-repeat: repeat-x;
+    text-align: center;
 }
-/* FIN Séparateurs */
 
-
-/* Autres Balises */
-h1
+#photo_zozor img
 {
-    font-size: 1.2em;
-    font-weight: inherit;
-
-    text-transform: uppercase;
+    border: 1px solid #181818;
 }
-/* FIN Autres Balises */
+
+#reseaux-sociaux
+{
+    text-align: center;
+}
+
+aside img
+{
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+
+    padding-top: 25px;
+
+    background: url('../images/ico_top.png') no-repeat top center, url('../images/separateur.png') repeat-x top, url('../images/ombre.png') repeat-x top;
+
+    justify-content: space-between;
+}
+
+footer p,
+footer ul
+{
+    font-size: .8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+
+#tweet
+{
+    width: 28%;
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+
+.mes-photos
+{
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.mes-photos img
+{
+    margin: 2px;
+}
+
+#mes_amis
+{
+    width: 35%;
+}
+
+#mes_photos img
+{
+    border: 1px solid #181818;
+}
+
+#listes_amis
+{
+    display: flex;
+
+    margin-top: 0;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#mes_amis ul
+{
+    padding-left: 15px;
+
+    list-style-image: url('../images/ico_liensexterne.png');
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+
+    color: #760001;
+}
