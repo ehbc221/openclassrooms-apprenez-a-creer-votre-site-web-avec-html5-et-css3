@@ -1,0 +1,94 @@
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/ballpark.eot');
+    src: url('../fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ballpark.woff') format('woff'),
+    url('../fonts/ballpark.ttf') format('truetype'),
+    url('../fonts/ballpark.svg#BallparkWeiner') format('svg');
+}
+body
+{
+    background-image: url('../images/fond_gris.png');
+}
+#bloc_page
+{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+#lisere
+{
+    width: 20%;
+    height: 100%;
+
+    border-radius: 5px;
+    background-image: url('../images/fond_noir.png');
+}
+#contenu
+{
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: nowrap;
+}
+header
+{
+    display: flex;
+
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.entete
+{
+    width: 90%;
+
+    justify-content: center;
+}
+.photo_profil
+{
+    width: 10%;
+}
+#sections
+{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+section
+{
+    width: 30%;
+}
+h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+h2
+{
+    font-size: 1.5em;
+
+    color: #b5571b;
+}
+article
+{
+    text-align: justify;
+}
+.entete
+{
+    text-align: center;
+}
+img
+{
+    border: 1px solid #181818;
+    box-shadow: 3px 3px 3px #181818;
+}
