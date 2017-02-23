@@ -1,0 +1,33 @@
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/ballpark.eot');
+    src: url('../fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ballpark.woff') format('woff'),
+    url('../fonts/ballpark.ttf') format('truetype'),
+    url('../fonts/ballpark.svg#BallparkWeiner') format('svg');
+}
+body
+{
+    background-image: url('../images/fond_gris.png');
+}
+h1
+{
+    font-family: 'BallparkWeiner';
+}
+h2
+{
+    color: #b5571b;
+}
+.entete
+{
+    text-align: center;
+}
+img
+{
+    border: 1px solid #181818;
+    box-shadow: 3px 3px 3px #181818;
+}
