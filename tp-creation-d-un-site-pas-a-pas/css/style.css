@@ -1,4 +1,4 @@
-/* Définition des ../fonts personnalisées */
+/* Définition des polices personnalisées */
 
 @font-face
 {
@@ -38,8 +38,7 @@ body
 
 #bloc_page
 {
-    width: 80%;
-    min-width: 550px;
+    width: 900px;
     margin: auto;
 }
 
@@ -61,7 +60,6 @@ header
 
     background: url('../images/separateur.png') repeat-x bottom;
 
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -82,7 +80,7 @@ header
 
 #logo img
 {
-    width: 60px;
+    width: 59px;
     height: 60px;
 }
 
@@ -110,14 +108,12 @@ nav ul
 {
     display: flex;
 
-    margin-left: 0;
-
     list-style-type: none;
 }
 
 nav li
 {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 nav a
@@ -143,7 +139,6 @@ nav a:hover
 {
     position: relative;
 
-    width: 100%;
     height: 200px;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -262,15 +257,9 @@ aside
     border: 1px solid #181818;
 }
 
-#reseaux-sociaux
-{
-    text-align: center;
-}
-
 aside img
 {
-    margin-right: 1px;
-    margin-left: 1px;
+    margin-right: 5px;
 }
 
 /* Footer */
@@ -282,8 +271,6 @@ footer
     padding-top: 25px;
 
     background: url('../images/ico_top.png') no-repeat top center, url('../images/separateur.png') repeat-x top, url('../images/ombre.png') repeat-x top;
-
-    justify-content: space-between;
 }
 
 footer p,
@@ -308,25 +295,15 @@ footer h1
     width: 35%;
 }
 
-.mes-photos
-{
-    display: flex;
-
-    flex-wrap: wrap;
-}
-
-.mes-photos img
-{
-    margin: 2px;
-}
-
 #mes_amis
 {
-    width: 35%;
+    width: 31%;
 }
 
 #mes_photos img
 {
+    margin-right: 2px;
+
     border: 1px solid #181818;
 }
 
@@ -336,13 +313,12 @@ footer h1
 
     margin-top: 0;
 
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 #mes_amis ul
 {
-    padding-left: 15px;
+    padding-left: 2px;
 
     list-style-image: url('../images/ico_liensexterne.png');
 }
