@@ -1,0 +1,438 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/ballpark.eot');
+    src: url('../fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ballpark.woff') format('woff'),
+    url('../fonts/ballpark.ttf') format('truetype'),
+    url('../fonts/ballpark.svg#BallparkWeiner') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/dayrom.eot');
+    src: url('../fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/dayrom.woff') format('woff'),
+    url('../fonts/dayrom.ttf') format('truetype'),
+    url('../fonts/dayrom.svg#Dayrom') format('svg');
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+    color: #181818;
+    background: url('../images/fond_jaune.png');
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+section h1,
+footer h1,
+nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+
+    text-transform: uppercase;
+}
+
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+}
+
+/* Header */
+
+header
+{
+    background: url('../images/separateur.png') repeat-x bottom;
+}
+
+#titre_principal
+{
+    display: inline-block;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#logo,
+header h1
+{
+    display: inline-block;
+
+    margin-bottom: 0;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    font-weight: normal;
+
+    margin-top: 0;
+}
+
+/* Navigation */
+
+nav
+{
+    display: inline-block;
+
+    width: 740px;
+
+    text-align: right;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    display: inline-block;
+
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+
+    padding-bottom: 3px;
+
+    text-decoration: none;
+
+    color: #181818;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+@media all and (max-width: 1024px)
+{
+    nav
+    {
+        width: auto;
+
+        text-align: left;
+    }
+
+    nav li
+    {
+        display: block;
+
+        padding-left: 4px;
+    }
+
+    nav a
+    {
+        font-size: 1.1em;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+}
+
+/* Bannière */
+
+#banniere_image
+{
+    position: relative;
+
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+    border-radius: 5px;
+    background: url('../images/sanfrancisco.jpg') no-repeat;
+    box-shadow: 0 4px 4px #1c1a19;
+}
+
+#banniere_description
+{
+    font-size: .8em;
+
+    position: absolute;
+    bottom: 0;
+
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+
+    color: white;
+    border-radius: 0 0 5px 5px;
+    background-color: rgb(24,24,24); /* Pour les anciens navigateurs */
+    background-color: rgba(24,24,24,.8);
+}
+
+.bouton_rouge
+{
+    font-size: 1.2em;
+
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+
+    display: inline-block;
+
+    height: 25px;
+    padding: 3px 8px 0 8px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    background: url('../images/fond_degraderouge.png') repeat-x;
+}
+
+.bouton_rouge img
+{
+    border: 0;
+}
+
+@media all and (max-width: 1024px)
+{
+    #banniere_image
+    {
+        display: none;
+    }
+}
+
+/* Corps */
+
+article,
+aside
+{
+    display: inline-block;
+
+    text-align: justify;
+    vertical-align: top;
+}
+
+article
+{
+    width: 625px;
+    margin-right: 15px;
+}
+
+.ico_categorie
+{
+    margin-right: 8px;
+
+    vertical-align: middle;
+}
+
+article p
+{
+    font-size: .8em;
+}
+
+aside
+{
+    font-size: .9em;
+
+    position: relative;
+
+    width: 235px;
+    padding: 10px;
+
+    color: white;
+    border-radius: 5px;
+    background-color: #706b64;
+    box-shadow: 0 2px 5px #1c1a19;
+}
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#photo_zozor
+{
+    text-align: center;
+}
+
+#photo_zozor img
+{
+    border: 1px solid #181818;
+}
+
+aside img
+{
+    margin-right: 5px;
+}
+
+
+@media all and (max-width: 1024px)
+{
+    article,
+    aside
+    {
+        display: block;
+
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    #fleche_bulle
+    {
+        display: none;
+    }
+
+    #photo_zozor img
+    {
+        float: right;
+
+        width: 110px;
+        margin-left: 15px;
+    }
+
+    aside p:last-child
+    {
+        text-align: center;
+    }
+}
+
+/* Footer */
+
+footer
+{
+    padding-top: 25px;
+
+    background: url('../images/ico_top.png') no-repeat top center, url('../images/separateur.png') repeat-x top, url('../images/ombre.png') repeat-x top;
+}
+
+footer p,
+footer ul
+{
+    font-size: .8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+#tweet,
+#mes_photos,
+#mes_amis
+{
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+#tweet
+{
+    width: 28%;
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+
+#mes_amis
+{
+    width: 31%;
+}
+
+#mes_photos img
+{
+    margin-right: 2px;
+
+    border: 1px solid #181818;
+}
+
+#mes_amis ul
+{
+    display: inline-block;
+
+    width: 48%;
+    margin-top: 0;
+    padding-left: 2px;
+
+    list-style-image: url('../images/ico_liensexterne.png');
+
+    vertical-align: top;
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+
+    color: #760001;
+}
+
+
+/* Correctifs pour les vieilles versions d'Internet Explorer */
+
+/* Pour activer un positionnement type inline-block sur les vieilles versions d'IE */
+
+.old_ie #titre_principal,
+.old_ie #logo,
+.old_ie header h1,
+.old_ie nav,
+.old_ie nav li,
+.old_ie .bouton_rouge,
+.old_ie article,
+.old_ie aside,
+.old_ie #tweet,
+.old_ie #mes_photos,
+.old_ie #mes_amis,
+.old_ie #mes_amis ul
+{
+    display: inline;
+    zoom: 1;
+}
+
+/* Quelques ajustements pour les vieilles versions d'IE */
+
+.old_ie section h1,
+.ie8 section h1
+{
+    font-size: 1.1em;
+}
+
+.old_ie footer div,
+.ie8 footer div
+{
+    margin-top: 30px;
+
+    background: url('../images/separateur.png') repeat-x top;
+}
