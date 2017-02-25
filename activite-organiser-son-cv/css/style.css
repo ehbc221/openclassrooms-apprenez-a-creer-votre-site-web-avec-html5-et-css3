@@ -66,6 +66,8 @@ header
 section
 {
     width: 30%;
+
+    text-align: justify;
 }
 h1
 {
@@ -79,10 +81,7 @@ h2
 
     color: #b5571b;
 }
-article
-{
-    text-align: justify;
-}
+
 .entete
 {
     text-align: center;
