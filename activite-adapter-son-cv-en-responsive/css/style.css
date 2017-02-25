@@ -90,3 +90,20 @@ img
     border: 1px solid #181818;
     box-shadow: 3px 3px 3px #181818;
 }
+
+
+@media all and (max-width: 1080px)
+{
+    #lisere
+    {
+        display: none;
+    }
+    #sections
+    {
+        flex-direction: column;
+    }
+    section
+    {
+        width: 100%;
+    }
+}
